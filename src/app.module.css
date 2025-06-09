@@ -1,0 +1,10 @@
+.container {
+  width: 34.75rem;
+  height: 50rem;
+
+  background-color: #ffffff;
+
+  border-radius: 0.75rem;
+
+  padding: 3rem 1.5rem;
+}

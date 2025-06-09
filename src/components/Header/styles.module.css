@@ -1,0 +1,34 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  gap: 3rem;
+}
+
+.image img {
+  width: 19.4rem;
+  height: 3.7rem;
+}
+
+.attempts {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.attempts span {
+  font-size: 1.12rem;
+  font-weight: 400;
+
+  color: #9b9b9b;
+}
+
+.attempts span strong {
+  font-size: 1.25rem;
+  font-weight: bold;
+
+  color: #e8891c;
+}
