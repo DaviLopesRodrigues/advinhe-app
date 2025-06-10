@@ -3,7 +3,13 @@ import restartIcon from "/restart-icon.svg";
 
 import styles from "./styles.module.css";
 
-function Header() {
+type Props = {
+  current: number;
+  max: number;
+  onRestartGame: () => void;
+};
+
+function Header({ current, max, onRestartGame }: Props) {
   return (
     <div className={styles.container}>
       <div className={styles.image}>
@@ -11,9 +17,9 @@ function Header() {
       </div>
       <div className={styles.attempts}>
         <span>
-          <strong>5</strong> de 10 tentativas
+          <strong>{current}</strong> de {max} tentativas
         </span>
-        <img src={restartIcon} />
+        <img src={restartIcon} onClick={onRestartGame} />
       </div>
     </div>
   );
