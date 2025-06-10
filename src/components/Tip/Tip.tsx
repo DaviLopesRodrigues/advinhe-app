@@ -1,7 +1,11 @@
 import tipIcon from "/tip-icon.svg";
 import styles from "./styles.module.css";
 
-function Tip() {
+type Props = {
+  tip: string;
+};
+
+function Tip({ tip }: Props) {
   return (
     <div className={styles.container}>
       <div className={styles.tipIcon}>
@@ -9,7 +13,7 @@ function Tip() {
       </div>
       <div className={styles.tip}>
         <p>Dica</p>
-        <p>Biblioteca para criar interfaces Web com Javascript.</p>
+        <p>{tip}</p>
       </div>
     </div>
   );
